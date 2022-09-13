@@ -14,7 +14,7 @@ function load_scripts(){
     wp_enqueue_style( 'flickity-slider',plugins_url( '/flickity/flickity.css',  __FILE__ ) );
 
     //Add js
-    wp_enqueue_script( 'flickity-slider', plugin_dir_url('/flickity/flickity.js', __FILE__ ) , true );
+    wp_enqueue_script( 'flickity-slider', plugins_url('/flickity/flickity.js', __FILE__ ) , array(), '1.0.0', true );
 }
 
 
